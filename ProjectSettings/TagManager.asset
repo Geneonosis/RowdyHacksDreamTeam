@@ -6,6 +6,14 @@ TagManager:
   tags:
   - FindMe
   - null
+  - coolCube
+  - Tetra1
+  - Tetra2
+  - FlatHexa
+  - FlatOcto
+  - PentaPrism
+  - boringCube
+  - BinderClip
   layers:
   - Default
   - TransparentFX
@@ -19,7 +27,7 @@ TagManager:
   - realWorld
   - tablet
   - tablet_Reality
-  - 
+  - ball_layer
   - 
   - 
   - 
