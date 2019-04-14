@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - FindMe
+  - null
+  - coolCube
+  - Tetra1
+  - Tetra2
+  - FlatHexa
+  - FlatOcto
+  - PentaPrism
+  - boringCube
+  - BinderClip
   layers:
   - Default
   - TransparentFX
@@ -14,10 +24,10 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
-  - 
-  - 
+  - realWorld
+  - tablet
+  - tablet_Reality
+  - ball_layer
   - 
   - 
   - 
