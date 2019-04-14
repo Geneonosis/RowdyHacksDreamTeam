@@ -5,6 +5,7 @@ using UnityEngine;
 public class randomObjects : MonoBehaviour
 {
     private GameObject RandomItem = null;
+    private MeshFilter[] filters = null;
     [SerializeField] GameObject[] objs;
 
     // Start is called before the first frame update
@@ -14,7 +15,16 @@ public class randomObjects : MonoBehaviour
         RandomItem = objs[index];
 
         Debug.Log(index);
-        this.gameObject.GetComponent<MeshFilter>().mesh = RandomItem.GetComponent<MeshFilter>().mesh;
+
+        filters = this.gameObject.GetComponentsInChildren<MeshFilter>();
+        foreach(MeshFilter filter in filters)
+        {
+            filter.mesh = RandomItem.GetComponent<MeshFilter>().mesh;
+            filter.tag = RandomItem.tag;
+            index = Random.Range(0, objs.Length - 1);
+            RandomItem = objs[index];
+        }
+        //this.gameObject.GetComponent<MeshFilter>().mesh = RandomItem.GetComponent<MeshFilter>().mesh;
 
     }
 
